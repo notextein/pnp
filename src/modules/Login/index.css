@@ -1,0 +1,144 @@
+.login-container {
+    background-image: url('../../resources/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 120px);
+    padding: 60px 30px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+    .login-container .prompt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: #A32136;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 40px;
+        color: white;
+        font: normal 12px 'FS Albert Bold';
+        text-align: center;
+        z-index: 4;
+    }
+
+        .login-container .prompt .close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 40px;
+            height: 40px;
+            color: white;
+            font-size: 22px;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+    .login-container .checking {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+        .login-container .checking span {
+            color: white;
+            font: normal 20px 'FS Albert Regular';
+            letter-spacing: 1px;
+        }
+
+    .login-container .panel {
+        width: 500px;
+        margin: auto;
+    }
+
+        .login-container .panel .logo {
+            width: 80%;
+            margin: auto auto 30px auto;
+        }
+
+        .login-container .panel h1 {
+            color: #646464;
+            font: normal 24px 'FS Albert Regular';
+            text-align: center;
+            margin: auto auto 100px auto;
+        }
+
+        .login-container .panel .align-center {
+            text-align: center;
+        }
+
+        .login-container .panel .textbox {
+            display: flex;
+            background-color: white;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #E0E1E2;
+            border-radius: 4px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+            .login-container .panel .textbox input {
+                background-color: transparent;
+                width: calc(100% - 50px);
+                height: 50px;
+                color: black;
+                font: normal 16px 'FS Albert Regular';
+                border: 0px;
+                padding: 0px 20px;
+            }
+
+            .login-container .panel .textbox .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 50px;
+                color: #A8A8A8;
+                font-size: 20px;
+            }
+
+        .login-container .panel .button {
+            background-color: #ED1B2E;
+            width: 160px;
+            height: 42px;
+            color: white;
+            font: normal 14px 'FS Albert Bold';
+            border: 0px;
+            border-radius: 4px;
+            box-shadow: 0px 3px 6px rgba(237, 27, 46, 0.5);
+            transition: all 0.2s ease;
+        }
+
+        .login-container .panel .button:disabled {
+            background-color: #646464;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+            cursor: initial;
+        }
+
+        .login-container .panel .button:active {
+            transform: scale(0.96);
+        }
+
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+    .login-container .panel {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+    .login-container .panel {
+        width: 60%;
+    }
+}

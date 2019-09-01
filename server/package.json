@@ -1,0 +1,23 @@
+{
+  "name": "pruone-server",
+  "version": "1.0.0",
+  "description": "The server bridge that connects presentation to backend web services",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js production"
+  },
+  "author": "Lex Luger Basilio",
+  "license": "ISC",
+  "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "cookie-parser": "^1.4.4",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "ip": "^1.1.5",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,59 @@
+.home-content {
+    display: flex;
+}
+
+.home-content .box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.home-content .box:last-child {
+    margin-right: 0px;
+}
+
+.home-content .box:nth-child(1) {
+    background: linear-gradient(#00ADD8, #005DB9);
+}
+
+.home-content .box:nth-child(2) {
+    flex: 1.3;
+    background: linear-gradient(#ED1B2E, #A32136);
+}
+
+.home-content .box:nth-child(3) {
+    background: linear-gradient(#FFB81D, #D57F00); 
+}
+
+.home-content .box h1 {
+    color: white;
+    font: normal 28px 'FS Albert Regular';
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px dashed white;
+}
+
+.home-content .box .icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 145px;
+}
+
+.home-content .box .bg-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    font-size: 250px;
+    transform: translate(10%, 10%);
+    opacity: 0.2;
+}
