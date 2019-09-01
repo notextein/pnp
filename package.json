@@ -21,7 +21,7 @@
     "images": "src/resources/images",
     "ducks": "src/ducks"
   },
-  "author": "Lex Luger Basilio",
+  "author": "Don Gerald Nombre",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.6",
